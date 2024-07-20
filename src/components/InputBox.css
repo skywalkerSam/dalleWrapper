@@ -1,0 +1,60 @@
+.inputBox {
+    /* border: 2px solid grey; */
+    border-radius: 21px;
+    background-color: black;
+}
+
+.form {
+    width: 600px;
+    /* background: rgb(146,245,238);
+      background: radial-gradient(circle, rgba(146,245,238,1) 0%, rgba(244,137,137,1) 100%); */
+    background-color: transparent;
+}
+
+.custom-input {
+    border: 2px solid red;
+    color: greenyellow;
+}
+
+.custom-input:hover {
+    color: red;
+}
+
+.custom-submit {
+    border: 2px solid greenyellow;
+}
+
+.custom-submit:hover {
+    outline: none;
+    color: greenyellow;
+    border: 2px solid red;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid greenyellow;
+    background-size: 100% 2px, 100% 1px;
+    /* color: greenyellow; */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.spinner {
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
