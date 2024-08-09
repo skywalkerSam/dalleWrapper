@@ -45,7 +45,7 @@ app.post("/test", (req, res) => {
   }
 });
 
-app.post("/image", async (req, res) => {
+app.post("/generate", async (req, res) => {
   try {
     const prompt = req.body.prompt;
 
