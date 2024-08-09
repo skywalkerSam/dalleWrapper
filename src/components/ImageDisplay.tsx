@@ -7,8 +7,8 @@ interface Props {
 const ImageDisplay: React.FC<Props> = ({ imageUrl }) => {
   return (
     <>
-      <div className="imageDisplayBox mt3">
-        <img src={imageUrl} alt="Image" width="auto" />
+      <div className="mt3 mb6">
+        <img src={imageUrl} alt="" width="auto" />
         {/* {console.log(imageUrl)} */}
       </div>
     </>
