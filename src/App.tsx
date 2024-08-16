@@ -25,6 +25,7 @@ const App = () => {
   async function onSubmit() {
     setLoading(true);
     try {
+      // alert("Images may contain explicit contents, Continue...?")
       const response = await fetch(SERVER, {
         method: "post",
         headers: { "Content-Type": "application/json" },
@@ -68,13 +69,13 @@ const App = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={starboyLogo} alt="Starboy Logo" className="logo" />
+            <img src={starboyLogo} alt="Starboy Logo" className="starboyLogo" />
           </a>
         </div>
         <header>
           <div>
             <h1 className="f1 red">Image Generator</h1>
-            <p className="tc f6">using Dall·E by OpenAI</p>
+            {/* <p className="tc f6">using Dall·E by OpenAI</p> */}
           </div>
         </header>
 
@@ -93,7 +94,7 @@ const App = () => {
             <a href="https://react.dev" target="_blank">
               <img
                 src={reactLogo}
-                className="footerLogo react"
+                className="logo react"
                 alt="React logo"
               />
             </a>
